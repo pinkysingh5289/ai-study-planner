@@ -1,8 +1,23 @@
+import { useEffect, useState } from "react";
 import { FaBrain, FaChartLine, FaClock, FaCheckCircle } from "react-icons/fa";
 import { MdOutlineSchool } from "react-icons/md";
 import { AiOutlineThunderbolt } from "react-icons/ai";
 
 export default function Home() {
+  const text = "Plan Smarter. Study Better.";
+  const [displayText, setDisplayText] = useState("");
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    if (index < text.length) {
+      const timeout = setTimeout(() => {
+        setDisplayText((prev) => prev + text[index]);
+        setIndex(index + 1);
+      }, 80); // typing speed
+      return () => clearTimeout(timeout);
+    }
+  }, [index, text]);
+
   return (
     <>
       {/* ===== HERO ===== */}
@@ -12,8 +27,10 @@ export default function Home() {
             AI-Powered Study Planner
           </span>
 
+          {/* Typing Heading */}
           <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
-            Plan Smarter. Study Better.
+            {displayText}
+            <span className="border-r-2 border-white ml-1 animate-pulse"></span>
           </h1>
 
           <p className="max-w-2xl mx-auto text-lg md:text-xl opacity-90 mb-10">
@@ -44,19 +61,13 @@ export default function Home() {
         </p>
 
         <div className="mt-14 grid gap-10 md:grid-cols-3 max-w-6xl mx-auto">
-          <ServiceCard
-            icon={<FaBrain />}
-            title="Smart Study Plans"
+          <ServiceCard icon={<FaBrain />} title="Smart Study Plans"
             desc="Create structured study schedules based on subjects, priorities, and available time to avoid last-minute pressure."
           />
-          <ServiceCard
-            icon={<FaChartLine />}
-            title="Progress Tracking"
+          <ServiceCard icon={<FaChartLine />} title="Progress Tracking"
             desc="Track daily and weekly progress to understand performance, identify gaps, and stay motivated."
           />
-          <ServiceCard
-            icon={<FaClock />}
-            title="Deadline Management"
+          <ServiceCard icon={<FaClock />} title="Deadline Management"
             desc="Manage assignments and exams with clear deadlines and reminders so nothing important is missed."
           />
         </div>
@@ -73,14 +84,10 @@ export default function Home() {
         </p>
 
         <div className="mt-14 grid gap-10 md:grid-cols-2 max-w-4xl mx-auto">
-          <ServiceCard
-            icon={<AiOutlineThunderbolt />}
-            title="Simple & Easy"
+          <ServiceCard icon={<AiOutlineThunderbolt />} title="Simple & Easy"
             desc="A clean, intuitive interface that lets students start planning immediately without complexity."
           />
-          <ServiceCard
-            icon={<FaCheckCircle />}
-            title="Reliable Planning"
+          <ServiceCard icon={<FaCheckCircle />} title="Reliable Planning"
             desc="Clear task visibility and structure help students stay confident and consistent."
           />
         </div>
@@ -97,14 +104,10 @@ export default function Home() {
         </p>
 
         <div className="mt-14 grid gap-10 md:grid-cols-2 max-w-4xl mx-auto">
-          <ServiceCard
-            icon={<MdOutlineSchool />}
-            title="Build Discipline"
+          <ServiceCard icon={<MdOutlineSchool />} title="Build Discipline"
             desc="Encourage consistent study habits through structured and realistic planning."
           />
-          <ServiceCard
-            icon={<FaCheckCircle />}
-            title="Reduce Stress"
+          <ServiceCard icon={<FaCheckCircle />} title="Reduce Stress"
             desc="Clear plans and progress visibility reduce confusion and exam anxiety."
           />
         </div>
