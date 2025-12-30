@@ -5,7 +5,7 @@ html, body {
   font-family: Arial, sans-serif;
 }
 
-/* ===== LAYOUT FIX (IMPORTANT) ===== */
+/* ===== LAYOUT FIX ===== */
 .app-layout {
   min-height: 100vh;
   display: flex;
@@ -60,13 +60,19 @@ html, body {
   background: #eef2ff;
 }
 
+.hero p {
+  max-width: 600px;
+  margin: 10px auto 25px;
+  color: #444;
+}
+
 /* ===== SECTIONS ===== */
 .section {
   padding: 50px 20px;
   text-align: center;
 }
 
-/* Container to align sections */
+/* Container */
 .container {
   max-width: 1100px;
   margin: 0 auto;
@@ -77,6 +83,14 @@ html, body {
   background: #f9fafb;
 }
 
+/* Section description */
+.section-desc {
+  max-width: 650px;
+  margin: 10px auto 30px;
+  color: #555;
+}
+
+/* ===== CARDS ===== */
 .cards {
   display: flex;
   justify-content: center;
@@ -85,13 +99,32 @@ html, body {
   margin-top: 30px;
 }
 
-
 .card {
-  padding: 20px;
+  padding: 25px 20px;
   background: white;
   border-radius: 8px;
-  width: 200px;
+  width: 220px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Icons inside cards */
+.icon {
+  font-size: 36px;
+  color: #4f46e5;
+  margin-bottom: 12px;
+}
+
+/* Card text */
+.card h3 {
+  margin: 10px 0 8px;
+  font-size: 16px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.4;
 }
 
 /* ===== CTA ===== */
@@ -102,8 +135,13 @@ html, body {
   padding: 50px 20px;
 }
 
+.cta p {
+  max-width: 600px;
+  margin: 10px auto 25px;
+}
+
 .cta-btn {
-  padding: 10px 20px;
+  padding: 10px 22px;
   border-radius: 20px;
   border: none;
   cursor: pointer;
@@ -142,4 +180,21 @@ html, body {
   padding: 15px;
   background: #111827;
   color: white;
+}
+
+/* ===== RESPONSIVE (small screens) ===== */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .cards {
+    gap: 20px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 280px;
+  }
 }
