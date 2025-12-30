@@ -13,8 +13,7 @@ export default function Home() {
           </span>
 
           <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
-            Plan Smarter. <br className="hidden md:block" />
-            Study Better.
+            Plan Smarter. Study Better.
           </h1>
 
           <p className="max-w-2xl mx-auto text-lg md:text-xl opacity-90 mb-10">

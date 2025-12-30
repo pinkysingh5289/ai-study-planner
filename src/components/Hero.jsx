@@ -8,8 +8,7 @@ export default function Hero() {
 
       {/* Heading */}
       <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
-        Plan Smarter. <br className="hidden md:block" />
-        Study Better.
+        Plan Smarter.Study Better.
       </h1>
 
       {/* Description */}
