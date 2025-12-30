@@ -3,6 +3,7 @@ html, body {
   height: 100%;
   margin: 0;
   font-family: Arial, sans-serif;
+  background: #ffffff;
 }
 
 /* ===== LAYOUT FIX ===== */
@@ -22,7 +23,7 @@ html, body {
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
-  background: #4f46e5;
+  background: #4f46e5; /* primary purple */
   color: white;
 }
 
@@ -53,23 +54,35 @@ html, body {
   font-weight: 600;
 }
 
-/* ===== HERO ===== */
+/* ===== HERO (Soft Purple) ===== */
 .hero {
   text-align: center;
-  padding: 80px 20px;
-  background: #eef2ff;
+  padding: 90px 20px;
+  background: #eef2ff; /* soft purple */
 }
 
 .hero p {
-  max-width: 600px;
-  margin: 10px auto 25px;
+  max-width: 650px;
+  margin: 15px auto 30px;
   color: #444;
+  line-height: 1.6;
 }
 
-/* ===== SECTIONS ===== */
+/* ===== SECTIONS (White default) ===== */
 .section {
-  padding: 50px 20px;
+  padding: 70px 20px;
   text-align: center;
+  background: #ffffff;
+}
+
+/* Light Gray section */
+.section.light {
+  background: #f3f4f6;
+}
+
+/* Soft Purple section */
+.section.soft {
+  background: #eef2ff;
 }
 
 /* Container */
@@ -79,15 +92,12 @@ html, body {
   padding: 0 20px;
 }
 
-.section.light {
-  background: #f9fafb;
-}
-
 /* Section description */
 .section-desc {
-  max-width: 650px;
-  margin: 10px auto 30px;
+  max-width: 700px;
+  margin: 15px auto 40px;
   color: #555;
+  line-height: 1.6;
 }
 
 /* ===== CARDS ===== */
@@ -100,19 +110,19 @@ html, body {
 }
 
 .card {
-  padding: 25px 20px;
-  background: white;
-  border-radius: 8px;
-  width: 220px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 28px 22px;
+  background: #ffffff;
+  border-radius: 10px;
+  width: 230px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   text-align: center;
 }
 
-/* Icons inside cards */
+/* Icons */
 .icon {
   font-size: 36px;
   color: #4f46e5;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
 /* Card text */
@@ -124,25 +134,26 @@ html, body {
 .card p {
   font-size: 14px;
   color: #555;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
-/* ===== CTA ===== */
+/* ===== CTA (Strong Purple) ===== */
 .cta {
   background: #4f46e5;
   color: white;
   text-align: center;
-  padding: 50px 20px;
+  padding: 80px 20px;
 }
 
 .cta p {
-  max-width: 600px;
-  margin: 10px auto 25px;
+  max-width: 650px;
+  margin: 15px auto 30px;
+  line-height: 1.6;
 }
 
 .cta-btn {
-  padding: 10px 22px;
-  border-radius: 20px;
+  padding: 12px 26px;
+  border-radius: 25px;
   border: none;
   cursor: pointer;
   font-weight: bold;
@@ -150,39 +161,40 @@ html, body {
 
 /* ===== PAGES ===== */
 .page {
-  padding: 60px 20px;
+  padding: 80px 20px;
   text-align: center;
+  background: #ffffff;
 }
 
 /* ===== CONTACT ===== */
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  max-width: 400px;
+  gap: 12px;
+  max-width: 420px;
   margin: 0 auto;
 }
 
 .contact-form input,
 .contact-form textarea {
-  padding: 10px;
+  padding: 12px;
   font-size: 14px;
 }
 
 .contact-form button {
-  padding: 10px;
+  padding: 12px;
   cursor: pointer;
 }
 
-/* ===== FOOTER ===== */
+/* ===== FOOTER (Dark Gray) ===== */
 .footer {
   text-align: center;
-  padding: 15px;
+  padding: 18px;
   background: #111827;
-  color: white;
+  color: #e5e7eb;
 }
 
-/* ===== RESPONSIVE (small screens) ===== */
+/* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -195,6 +207,6 @@ html, body {
 
   .card {
     width: 100%;
-    max-width: 280px;
+    max-width: 300px;
   }
 }
