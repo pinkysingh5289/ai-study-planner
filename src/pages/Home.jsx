@@ -5,41 +5,31 @@ import { AiOutlineThunderbolt } from "react-icons/ai";
 export default function Home() {
   return (
     <>
-      {/* Hero Section */}
+      {/* ===== HERO SECTION ===== */}
       <section className="hero">
         <h1>Plan Smarter. Study Better.</h1>
         <p>
-          AI Study Planner is designed to help students manage their academic
-          workload in a structured and stress-free manner. By organizing tasks,
-          setting priorities, and tracking progress, it ensures that learning
-          becomes consistent rather than overwhelming. The platform focuses on
-          improving productivity while maintaining a healthy study routine.
+          AI Study Planner helps students organize their studies, manage time better, and stay consistent. With clear planning and progress tracking, studying becomes simpler and less stressful.
+
         </p>
         <button className="cta-btn">Start Now</button>
       </section>
 
-      {/* Our Services */}
+      {/* ===== OUR SERVICES ===== */}
       <section className="section">
         <div className="container">
           <h2>Our Services</h2>
           <p className="section-desc">
-            Our services are built to support students throughout their learning
-            journey. From planning daily study tasks to monitoring long-term
-            progress, each feature is designed to simplify complex schedules.
-            The goal is to help students focus on learning instead of worrying
-            about deadlines and missed tasks.
-          </p>
+           Our services help students plan daily tasks, track progress, and manage deadlines easily, allowing them to focus more on learning and less on scheduling. </p>
 
           <div className="cards">
             <div className="card">
               <FaBrain className="icon" />
               <h3>Smart Study Plans</h3>
               <p>
-                This feature helps students create well-structured study plans
-                based on subjects, priorities, and available time. Instead of
-                random preparation, learners get a clear roadmap for what to
-                study and when. It promotes consistency and avoids last-minute
-                pressure before exams.
+                Create structured study plans based on subjects and available
+                time. This helps students follow a clear routine and avoid
+                last-minute pressure.
               </p>
             </div>
 
@@ -47,11 +37,8 @@ export default function Home() {
               <FaChartLine className="icon" />
               <h3>Progress Tracking</h3>
               <p>
-                Progress tracking allows students to visualize how much they
-                have completed and what still needs attention. By regularly
-                reviewing progress, students can identify weak areas early.
-                This builds motivation and encourages steady improvement over
-                time.
+                Track daily and weekly progress to understand performance and
+                stay motivated throughout the learning journey.
               </p>
             </div>
 
@@ -59,36 +46,31 @@ export default function Home() {
               <FaClock className="icon" />
               <h3>Deadline Management</h3>
               <p>
-                Managing deadlines becomes easier with clear task timelines and
-                reminders. Students are less likely to miss important
-                submissions or exams. This feature helps reduce anxiety by
-                keeping everything organized in one place.
+                Manage assignments and exams with clear deadlines and reminders,
+                ensuring nothing important is missed.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Why Choose Us */}
+      {/* ===== WHY CHOOSE US ===== */}
       <section className="section light">
         <div className="container">
           <h2>Why Choose Us</h2>
           <p className="section-desc">
-            AI Study Planner focuses on simplicity, reliability, and student
-            needs. Unlike traditional planners, it emphasizes clarity and ease
-            of use. The platform is designed to adapt to different study styles
-            and academic goals, making it suitable for a wide range of learners.
+            AI Study Planner is built with students in mind. It focuses on
+            simplicity, clarity, and reliability to support productive and
+            stress-free learning.
           </p>
 
           <div className="cards">
             <div className="card">
               <AiOutlineThunderbolt className="icon" />
-              <h3>Simple & Fast</h3>
+              <h3>Simple & Easy</h3>
               <p>
-                The interface is designed to be intuitive so students can start
-                using it immediately without any learning curve. Quick setup
-                and easy navigation ensure that time is spent on studying, not
-                figuring out the tool.
+                Clean and intuitive design that allows students to start
+                planning immediately without any learning curve.
               </p>
             </div>
 
@@ -96,37 +78,31 @@ export default function Home() {
               <FaCheckCircle className="icon" />
               <h3>Reliable Planning</h3>
               <p>
-                Reliable planning helps students stay confident about their
-                preparation. With a clear overview of tasks and goals, learners
-                can trust the system to guide their daily study routine and
-                reduce uncertainty.
+                Clear structure and task visibility help students stay confident
+                and consistent with their study routine.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Our Objectives */}
+      {/* ===== OUR OBJECTIVES ===== */}
       <section className="section">
         <div className="container">
           <h2>Our Objectives</h2>
           <p className="section-desc">
-            Our objectives are centered around improving the overall study
-            experience for students. We aim to create a system that supports
-            disciplined learning, reduces stress, and builds confidence. Each
-            objective focuses on long-term academic growth rather than short-
-            term results.
+            Our objective is to improve the overall study experience by helping
+            students stay disciplined, reduce stress, and achieve better
+            academic outcomes.
           </p>
 
           <div className="cards">
             <div className="card">
               <MdOutlineSchool className="icon" />
-              <h3>Improve Study Discipline</h3>
+              <h3>Build Study Discipline</h3>
               <p>
-                By encouraging structured planning and daily consistency, this
-                objective helps students develop strong study habits. Over time,
-                disciplined learning leads to better understanding and improved
-                academic performance.
+                Encourage consistent learning habits through structured and
+                realistic study planning.
               </p>
             </div>
 
@@ -134,36 +110,32 @@ export default function Home() {
               <FaCheckCircle className="icon" />
               <h3>Reduce Study Stress</h3>
               <p>
-                Clear planning and progress visibility reduce confusion and
-                panic before exams. When students know what to study and when,
-                they feel more relaxed and confident in their preparation.
+                Clear plans and progress visibility help students feel more
+                relaxed and confident before exams.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Extra Section */}
-      <section className="section light">
+      {/* ===== EXTRA SECTION ===== */}
+      <section className="section soft">
         <div className="container">
           <h2>How We Help You Succeed</h2>
           <p className="section-desc">
-            Success in academics requires consistency, clarity, and motivation.
-            AI Study Planner combines smart planning, progress monitoring, and
-            reminders to support students at every step. By reducing confusion
-            and improving focus, it helps learners stay confident and achieve
-            their goals effectively.
+            By combining smart planning, progress tracking, and deadline
+            management, AI Study Planner helps students stay focused, motivated,
+            and in control of their academic goals.
           </p>
         </div>
       </section>
 
-      {/* CTA */}
+      {/* ===== CTA ===== */}
       <section className="cta">
-        <h2>Ready to upgrade your study routine?</h2>
+        <h2>Ready to improve your study routine?</h2>
         <p>
-          Take control of your studies with structured planning and clear goals.
-          Start building productive habits today and move closer to academic
-          success with confidence.
+          Start planning smarter today and build habits that lead to long-term
+          academic success.
         </p>
         <button className="cta-btn">Get Started</button>
       </section>
